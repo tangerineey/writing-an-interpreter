@@ -5,13 +5,6 @@ import (
     "writing-an-interpreter/token"
 )
 
-type Lexer struct {
-    input        string
-    position     int 
-    readPosition int
-    ch           byte 
-}
-
 func TestNextToken(t *testing.T) {
     input := `=+(){},;`
 
